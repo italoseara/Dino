@@ -1,2 +1,4 @@
-# Gamejam 1
- My first game jam done by my university made in Lua
+# Dino
+ My first game jam by my university (chrome dino clone made in Lua)
+
+![Image](https://github.com/italoseara/Dino/blob/main/src/assets/sprites/original.png)

@@ -16,7 +16,7 @@ function love.load()
 
     background = Background('assets/sprites/background/')
     obstacles = Obstacles('assets/sprites/obstacles/')
-    player = Player(150, 500, 'assets/sprites/player/')
+    player = Player(150, 500, 'assets/sprites/dino/')
 end
 
 function love.update(dt)

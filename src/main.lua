@@ -20,13 +20,15 @@ function love.load()
 end
 
 function love.update(dt)
-    if game.state == 'running' and game.speed < game.max_speed then
-        game.speed = game.speed + 5 * dt
+    if game.state == 'running' then
+        if game.speed < game.max_speed then
+            game.speed = game.speed + 5 * dt
+        end
 
         background:update(dt)
         obstacles:update(dt)
 
-        if not debug and  obstacles:checkCollision(player) then
+        if not debug and obstacles:checkCollision(player) then
             player:die()
         end
     end

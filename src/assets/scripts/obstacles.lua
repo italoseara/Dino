@@ -8,10 +8,8 @@ function Obstacles:new(path)
     self.obstacles = {}
 
     self.cactus = {}
-
     for i = 1, 6 do
         local cactus = {}
-        -- cactus/1.png
         cactus.sprite = Animation(love.graphics.newImage(path .. 'cactus/' .. i .. '.png'), 1, 1)
         cactus.hitbox = cactus.sprite:getSize()
 
@@ -19,7 +17,6 @@ function Obstacles:new(path)
     end
 
     self.bird = {}
-
     local bird = {}
     bird.sprite = Animation(love.graphics.newImage(path .. 'bird.png'), 2, 0.3)
     bird.hitbox = bird.sprite:getSize()

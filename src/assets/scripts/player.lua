@@ -97,12 +97,12 @@ function Player:draw()
     self.currentSprite:draw(self.pos.x, self.pos.y)
 
     if debug then
-        love.graphics.setColor(1, 0, 0, 1)
+        love.graphics.setColor(1, 0, 0)
         love.graphics.rectangle('line', self.pos.x, self.pos.y, self.hitbox.x, self.hitbox.y)
 
         love.graphics.print('vy: ' .. string.format("%.2f", self.velocity.y), self.pos.x, self.pos.y - 15)
         love.graphics.print('state: ' .. self.state, self.pos.x, self.pos.y - 30)
-        love.graphics.setColor(1, 1, 1, 1)
+        love.graphics.setColor(1, 1, 1)
     end
 end
 
